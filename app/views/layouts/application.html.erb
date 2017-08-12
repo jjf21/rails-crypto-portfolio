@@ -8,8 +8,16 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
+  <body class='nav-md'>
+    <div class='container body'>
+      <div class="main_container">
+          <%= render 'shared/lateral_nav'  %>
+          <%= render 'shared/top_nav'  %>
+          <div class="right_col" role="main" style="min-height: 1162px;">
+            <%= yield %>
+          </div>
+          <%= javascript_include_tag 'application' %>
+      </div>
+    </div>
   </body>
 </html>
