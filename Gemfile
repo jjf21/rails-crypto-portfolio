@@ -8,6 +8,9 @@ gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
 
+gem 'bittrex', :git => 'git://github.com/mwerner/bittrex.git'
+gem 'bittrex', :github => 'mwerner/bittrex', :branch => 'eiannone:patch-1'
+
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
